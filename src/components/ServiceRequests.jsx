@@ -4,7 +4,7 @@ import { Table, Button, Modal, Form, Container } from "react-bootstrap";
 
 import Header from "./Header";
 
-const API_URL = "http://localhost:3001/requests";
+const API_URL = "https://surjith-crm-app.herokuapp.com/requests";
 
 export default function ListUsers() {
   const [leadsList, setLeadsList] = useState([]);
@@ -77,7 +77,9 @@ export default function ListUsers() {
   };
 
   const getContactDetails = async () => {
-    const { data } = await axios.get(`http://localhost:3001/contacts`);
+    const { data } = await axios.get(
+      `https://surjith-crm-app.herokuapp.com/contacts`
+    );
     setGetContacts([...data]);
   };
 

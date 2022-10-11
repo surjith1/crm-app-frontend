@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Form, Button, Container, Modal } from "react-bootstrap";
 
-const API_URL = "http://localhost:3001/users";
+const API_URL = "https://surjith-crm-app.herokuapp.com/users";
 
 export default function Register(props) {
   console.log(props);

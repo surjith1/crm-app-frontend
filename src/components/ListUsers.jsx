@@ -4,7 +4,7 @@ import { Table, Button, Container, Modal } from "react-bootstrap";
 
 import Header from "./Header";
 
-const API_URL = "http://localhost:3001/users";
+const API_URL = "https://surjith-crm-app.herokuapp.com/users";
 
 export default function ListUsers() {
   const [userList, setUserList] = useState([]);
